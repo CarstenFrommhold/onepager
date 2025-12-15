@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carsten Frommhold</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #f5f0eb 0%, #e8ddd4 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #d4a59a;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            color: #5a4a42;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .intro-text h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #3d322d;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #d4a59a;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(212, 165, 154, 0.3);
+            min-width: 250px;
+            justify-content: center;
+        }
+
+        .link-button:hover {
+            background: #c89485;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(212, 165, 154, 0.4);
+        }
+
+        .link-button:active {
+            transform: translateY(0);
+        }
+
+        .emoji {
+            font-size: 22px;
+        }
+
+        @media (max-width: 480px) {
+            .profile-image {
+                width: 160px;
+                height: 160px;
+            }
+
+            .intro-text h1 {
+                font-size: 26px;
+            }
+
+            .intro-text {
+                font-size: 16px;
+            }
+
+            .link-button {
+                min-width: 200px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="carsten.jpg" alt="Profilbild" class="profile-image">
+
+        <div class="intro-text">
+            <h1>Hej! 👋 Ich bin Carsten.</h1>
+            <p>Softwareentwickler mit Leidenschaft für elegante Lösungen und Fußball-Enthusiast in meiner Freizeit.</p>
+        </div>
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/YOUR-PROFILE" class="link-button" target="_blank" rel="noopener">
+                <span class="emoji">👨‍💻</span>
+                <span>LinkedIn Profil</span>
+            </a>
+
+            <a href="https://your-football-blog.com" class="link-button" target="_blank" rel="noopener">
+                <span class="emoji">⚽</span>
+                <span>Fußball Blog</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
